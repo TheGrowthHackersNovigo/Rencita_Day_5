@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="icFS8bWy60al3ZuMNNZDJQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://rpachallenge.com/" CVScreenId="d4294d63-3190-45e1-b98b-f6d01b648dbc" CvTextArea="779, 239, 304, 39" CvTextArgument="Congratulations!" CvType="Text" DesignTimeRectangle="415, 229, 1033, 54" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Congratulations!' tag='DIV' visibleinnertext='*' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Congratulations!' tag='DIV' visibleinnertext='*' type='' class='message1 teal-text text-darken-2' check:text='Congratulations!' /&gt;" Guid="8fd9c1e7-e25f-4724-af45-2752ceb77d22" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="342efd4ff2cb105e2724822e9aabf8bb.png" xmlns="">0cQiJ5T4qkk22LYwppdcrzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

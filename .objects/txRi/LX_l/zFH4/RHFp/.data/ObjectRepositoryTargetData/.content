@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9P2gaIIzzUirLhgRoLpnwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="d4ac3bf8-50ad-456b-89f0-78bd41bd458c" CvElementArea="521, 395, 185, 35" CvType="InputBox" DesignTimeRectangle="523, 396, 182, 32" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='day' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='day' tag='SELECT' type='' class='input w28' aaname='' /&gt;" Guid="ab2479a8-efdd-4e67-aef3-fcf10acf221a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d4ac3bf8-50ad-456b-89f0-78bd41bd458c" CvTextArea="729, 316, 140, 16" CvTextArgument="Sun Sign Finder" CvType="Text" DesignTimeRectangle="474, 308, 650, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='sc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sc' tag='DIV' type='' class='form-h' aaname='Sun Sign Finder' check:innerText='Sun Sign Finder' /&gt;" Guid="283645cc-7da7-4bcf-8e56-a7cee2fe796a" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4d00a3b0adc340aa5699b3e7c90fab04.png" xmlns="">0EGZ1i8zxRkaykkHp6UnRRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

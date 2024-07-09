@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Get_Attribute_Year",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "eZc8N8PkV0OnGpP4qfELbw",
+  "Reference": "ZocLrKLMuUSRIuVqfl2Eiw/eZc8N8PkV0OnGpP4qfELbw",
+  "ParentRef": "ZocLrKLMuUSRIuVqfl2Eiw/zFH4fxFr0k6p1YiOggcWEg",
+  "Created": "2024-07-09T08:05:55.0959549Z",
+  "Updated": "2024-07-09T12:38:16.7071338Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
