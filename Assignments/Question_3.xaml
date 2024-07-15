@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Question_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="852,6217.600000000001" sap2010:WorkflowViewState.IdRef="Question_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Question_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="887,7480" sap2010:WorkflowViewState.IdRef="Question_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -49,87 +49,85 @@
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="RPA Challenge:&#xD;&#xA;• Go to the URL http://rpachallenge.com&#xD;&#xA;• Download the input data file by clicking on the “Download Excel” button.&#xD;&#xA;• Click on the start button&#xD;&#xA;• Enter the details in the webpage.&#xD;&#xA;Display the success rate (along with the time taken to complete) in a message box.&#xD;&#xA;" DisplayName="Main Sequence : Question 1" sap:VirtualizedContainerService.HintSize="862.4,6152.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence sap2010:Annotation.AnnotationText="RPA Challenge:&#xA;• Go to the URL http://rpachallenge.com&#xA;• Download the input data file by clicking on the “Download Excel” button.&#xA;• Click on the start button&#xA;• Enter the details in the webpage.&#xA;Display the success rate (along with the time taken to complete) in a message box.&#xA;" DisplayName="Main Sequence : Question 1" sap:VirtualizedContainerService.HintSize="862,7415" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope : Use excel" sap:VirtualizedContainerService.HintSize="800,5940" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope : Use excel" sap:VirtualizedContainerService.HintSize="800,7210" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do : Excel file - Assignment_3" sap:VirtualizedContainerService.HintSize="766.4,5830.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do : Excel file - Assignment_3" sap:VirtualizedContainerService.HintSize="766,7100" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Open input file " DisplayName="Use Excel File : To open the excel file" sap:VirtualizedContainerService.HintSize="704,5741.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data\Input\Assignment_3.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Open input file " DisplayName="Use Excel File : To open the excel file" sap:VirtualizedContainerService.HintSize="704,7012" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data\Input\Assignment_3.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do: Processing excel file" sap:VirtualizedContainerService.HintSize="670.4,5976.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do: Processing excel file" sap:VirtualizedContainerService.HintSize="670,6689" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_InputData" />
                     </Sequence.Variables>
@@ -138,40 +136,40 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage sap2010:Annotation.AnnotationText="Logging message that excel file is open" DisplayName="Log Message : Open excel file " sap:VirtualizedContainerService.HintSize="608,205.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Excel file is open&quot;]">
+                    <ui:LogMessage sap2010:Annotation.AnnotationText="Logging message that excel file is open" DisplayName="Log Message : Open excel file " sap:VirtualizedContainerService.HintSize="608,204" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Excel file is open&quot;]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Read data in range of  A1 to G11 " DisplayName="Read Range : Input data " sap:VirtualizedContainerService.HintSize="608,232.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:G11&quot;)]" SaveTo="[dt_InputData]">
+                    <ueab:ReadRangeX sap2010:Annotation.AnnotationText="Read data in range of  A1 to G11 " DisplayName="Read Range : Input data " sap:VirtualizedContainerService.HintSize="608,232" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:G11&quot;)]" SaveTo="[dt_InputData]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:ReadRangeX>
-                    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Opening http://rpachallenge.com site " AttachMode="ByInstance" DisplayName="Open RPA challenge browser" sap:VirtualizedContainerService.HintSize="608,6160" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="42e29121-abdf-49ba-967a-2fdbe5106132" Version="V2">
+                    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Opening http://rpachallenge.com site " AttachMode="ByInstance" DisplayName="Open RPA challenge browser" sap:VirtualizedContainerService.HintSize="608,6165" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="42e29121-abdf-49ba-967a-2fdbe5106132" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Sequence : Browser activity " sap:VirtualizedContainerService.HintSize="574.4,5894.399999999999" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Sequence : Browser activity " sap:VirtualizedContainerService.HintSize="574,5894" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap2010:Annotation.AnnotationText="Retrieve data from excel and type into RPA challenge site" DisplayName="Do : Fill the data " sap:VirtualizedContainerService.HintSize="512,5805.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence sap2010:Annotation.AnnotationText="Retrieve data from excel and type into RPA challenge site" DisplayName="Do : Enter credentials " sap:VirtualizedContainerService.HintSize="512,5804" sap2010:WorkflowViewState.IdRef="Sequence_5">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Version="V3">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="8b73c568-ec57-43d2-a04a-7f81c2f256f6" CvElementArea="14, 736, 381, 59" CvTextArea="181, 758, 49, 14" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 739, 374, 54" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='waves-effect col s12 m12 l12 btn-large uiColorButton' aaname='Start' check:innerText='START' /&gt;" Guid="8a2b1819-29cf-4f88-b602-e06671fd126c" InformativeScreenshot="91fcfcdd977e03962b335eef890b963f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                                 </uix:NClick.Target>
@@ -186,22 +184,22 @@
                                   </uix:VerifyExecutionOptions>
                                 </uix:NClick.VerifyOptions>
                               </uix:NClick>
-                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_InputData]" DisplayName="For Each Row in Data Table : Process each row in data table " sap:VirtualizedContainerService.HintSize="449.6,4246.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_InputData]" DisplayName="For Each Row in Data Table : Process each row in data table " sap:VirtualizedContainerService.HintSize="450,4243" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                                 <ui:ForEachRow.Body>
                                   <ActivityAction x:TypeArguments="sd:DataRow">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                     </ActivityAction.Argument>
-                                    <Sequence sap2010:Annotation.AnnotationText="Retrieve data from excel and fill in respective fields " DisplayName="Body : Execute for all rows " sap:VirtualizedContainerService.HintSize="416,4048.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                    <Sequence sap2010:Annotation.AnnotationText="Retrieve data from excel and fill in respective fields " DisplayName="Body : Execute for all rows " sap:VirtualizedContainerService.HintSize="416,4047" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill first name from excel file " ClickBeforeMode="Single" DisplayName="Type Into : First name " EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;First Name&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill first name from excel file " ClickBeforeMode="Single" DisplayName="Type Into : First name " EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;First Name&quot;).ToString]" Version="V3">
                                         <uix:NTypeInto.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="a461c03f-00a3-40c4-b225-a8cd06d273b6" CvElementArea="849, 273, 329, 39" CvType="InputBox" DesignTimeRectangle="855, 265, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='P2KzL' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="742ece5a-b819-4862-a78a-ec3b757ccd6d" InformativeScreenshot="bc0dc1b8f38d3aac9acd3583861cae6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                          <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="a461c03f-00a3-40c4-b225-a8cd06d273b6" CvElementArea="849, 273, 329, 39" CvType="InputBox" DesignTimeRectangle="855, 265, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='First Nam' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First Name' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' /&gt;" Guid="742ece5a-b819-4862-a78a-ec3b757ccd6d" InformativeScreenshot="bc0dc1b8f38d3aac9acd3583861cae6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NTypeInto.Target>
                                         <uix:NTypeInto.VerifyOptions>
                                           <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
@@ -219,8 +217,8 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <ui:LogMessage DisplayName="Log Message : First name " sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CurrentRow(&quot;First Name&quot;).ToString]" />
-                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill last name from excel file " ClickBeforeMode="Single" DisplayName="Type Into: Last Name " EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Last Name &quot;).ToString]" Version="V3">
+                                      <ui:LogMessage DisplayName="Log Message : First name " sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CurrentRow(&quot;First Name&quot;).ToString]" />
+                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill last name from excel file " ClickBeforeMode="Single" DisplayName="Type Into: Last Name " EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Last Name &quot;).ToString]" Version="V3">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="bde3ba21-4a36-4021-aee7-04541d8b121a" CvElementArea="510, 366, 328, 34" CvType="InputBox" DesignTimeRectangle="515, 353, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='3PxOt' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="4464349c-f36e-48a3-9b04-016c7b66ae91" InformativeScreenshot="9222dc4fee8106af8c13ffe200c5207e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NTypeInto.Target>
@@ -240,8 +238,8 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <ui:LogMessage DisplayName="Log Message : Last Name " sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[CurrentRow(&quot;Last Name &quot;).ToString]" />
-                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill company name from excel file " ClickBeforeMode="Single" DisplayName="Type Into: Company Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Company Name&quot;).ToString]" Version="V3">
+                                      <ui:LogMessage DisplayName="Log Message : Last Name " sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[CurrentRow(&quot;Last Name &quot;).ToString]" />
+                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill company name from excel file " ClickBeforeMode="Single" DisplayName="Type Into: Company Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Company Name&quot;).ToString]" Version="V3">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="62c19183-888a-48bd-bf62-518acd9cdeec" CvElementArea="509, 454, 328, 35" CvType="InputBox" DesignTimeRectangle="515, 442, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='Company Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ToDzk' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="a43b74aa-f472-42c5-9b79-4af25c262f1d" InformativeScreenshot="7fcd2e058654d30a98273101003d566d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NTypeInto.Target>
@@ -261,14 +259,14 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <ui:LogMessage sap2010:Annotation.AnnotationText="" DisplayName="Log Message : Company name " sap:VirtualizedContainerService.HintSize="353.6,205.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[CurrentRow(&quot;Company Name&quot;).ToString]">
+                                      <ui:LogMessage sap2010:Annotation.AnnotationText="" DisplayName="Log Message : Company name " sap:VirtualizedContainerService.HintSize="354,206" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[CurrentRow(&quot;Company Name&quot;).ToString]">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:LogMessage>
-                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill role in company from excel file " ClickBeforeMode="Single" DisplayName="Type Into : Role in company" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Role in Company&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill role in company from excel file " ClickBeforeMode="Single" DisplayName="Type Into : Role in company" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Role in Company&quot;).ToString]" Version="V3">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="069b9be8-196d-4868-9c3d-982b07c2e0d8" CvElementArea="509, 538, 329, 39" CvType="InputBox" DesignTimeRectangle="515, 530, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='Role in Company' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='PLi6r' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="660ec92f-fc6b-4861-953c-f6c692363b62" InformativeScreenshot="e8e2cc9053a565b1276d327d9acf514f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NTypeInto.Target>
@@ -288,8 +286,8 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <ui:LogMessage DisplayName="Log Message : Role in company" sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[CurrentRow(&quot;Role in Company&quot;).ToString]" />
-                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill address from excel file " ClickBeforeMode="Single" DisplayName="Type Into : Address" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Address&quot;).ToString]" Version="V3">
+                                      <ui:LogMessage DisplayName="Log Message : Role in company" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[CurrentRow(&quot;Role in Company&quot;).ToString]" />
+                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill address from excel file " ClickBeforeMode="Single" DisplayName="Type Into : Address" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Address&quot;).ToString]" Version="V3">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="1b832e0e-275e-4762-a405-115175031dc9" CvElementArea="509, 366, 328, 34" CvType="InputBox" DesignTimeRectangle="515, 353, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='Address' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='0SeKS' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="6ec169d4-da41-4980-98b4-1044a5cb799b" InformativeScreenshot="2aa3f5f147381dcefdf7741fac912001.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NTypeInto.Target>
@@ -309,8 +307,8 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <ui:LogMessage DisplayName="Log Message : Address" sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[CurrentRow(&quot;Address&quot;).ToString]" />
-                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill phone number from excel file " ClickBeforeMode="Single" DisplayName="Type Into : Phone number" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Phone Number&quot;).ToString]" Version="V3">
+                                      <ui:LogMessage DisplayName="Log Message : Address" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[CurrentRow(&quot;Address&quot;).ToString]" />
+                                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Fill phone number from excel file " ClickBeforeMode="Single" DisplayName="Type Into : Phone number" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="42e29121-abdf-49ba-967a-2fdbe5106132" Text="[CurrentRow(&quot;Phone Number&quot;).ToString]" Version="V3">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="1b832e0e-275e-4762-a405-115175031dc9" CvElementArea="848, 449, 328, 40" CvType="InputBox" DesignTimeRectangle="855, 442, 318, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='Phone Number' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='KjuR0' tag='INPUT' type='' class='ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="b390bc1a-5039-491f-afd6-3c0b75738da5" InformativeScreenshot="5681ae5f69f1619660d9366a85c1fe2b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                         </uix:NTypeInto.Target>

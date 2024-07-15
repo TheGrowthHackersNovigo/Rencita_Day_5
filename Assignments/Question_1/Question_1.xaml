@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Question_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="822.4,3534.4" sap2010:WorkflowViewState.IdRef="Question_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Question_1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="887,4613" sap2010:WorkflowViewState.IdRef="Question_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -50,9 +50,18 @@
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -61,53 +70,42 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Code a Robot in UiPath Studio to display the sun sign of an individual by entering the Date of birth of an individual and produce the output in the message box." DisplayName="Question_1" sap:VirtualizedContainerService.HintSize="512,4576.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Code a Robot in UiPath Studio to display the sun sign of an individual by entering the Date of birth of an individual and produce the output in the message box." DisplayName="Question_1" sap:VirtualizedContainerService.HintSize="512,4548" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -115,13 +113,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Site link:- https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" AttachMode="ByInstance" DisplayName="Open Astro-calculator site " sap:VirtualizedContainerService.HintSize="449.6,4444" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Site link:- https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" AttachMode="ByInstance" DisplayName="Open Astro-calculator site " sap:VirtualizedContainerService.HintSize="450,4418" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do: Execute in browser" sap:VirtualizedContainerService.HintSize="416,4160" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do: Execute in browser" sap:VirtualizedContainerService.HintSize="416,4136" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:List(x:String)" Name="ListOfDate" />
               <Variable x:TypeArguments="scg:List(x:String)" Name="ListOfMonths" />
@@ -136,7 +134,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="Retrieve list of all dates " Attribute="items" DisplayName="Get Attribute : Date" sap:VirtualizedContainerService.HintSize="353.6,271.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_4" Result="[ListOfDate]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="Retrieve list of all dates " Attribute="items" DisplayName="Get Attribute : Date" sap:VirtualizedContainerService.HintSize="354,270" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_4" Result="[ListOfDate]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="d4ac3bf8-50ad-456b-89f0-78bd41bd458c" ContentHash="9P2gaIIzzUirLhgRoLpnwA" CvElementArea="521, 395, 185, 35" CvType="InputBox" DesignTimeRectangle="523, 396, 182, 32" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='day' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='day' tag='SELECT' type='' class='input w28' aaname='' /&gt;" Guid="ab2479a8-efdd-4e67-aef3-fcf10acf221a" InformativeScreenshot="4d00a3b0adc340aa5699b3e7c90fab04.png" Reference="ZocLrKLMuUSRIuVqfl2Eiw/RHFpOdta8Ue-V6TJcDBG-Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -154,8 +152,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NGetAttributeGeneric>
-            <ui:LogMessage DisplayName="Log Message : List of dates " sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Join(&quot; &quot; , ListOfDate )]" />
-            <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="Used to retrieve list of all months " Attribute="items" DisplayName="Get Attribute: Month" sap:VirtualizedContainerService.HintSize="353.6,271.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_6" Result="[ListOfMonths]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <ui:LogMessage DisplayName="Log Message : List of dates " sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Join(&quot; &quot; , ListOfDate )]" />
+            <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="Used to retrieve list of all months " Attribute="items" DisplayName="Get Attribute: Month" sap:VirtualizedContainerService.HintSize="354,270" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_6" Result="[ListOfMonths]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="7c43b150-8675-4602-bb2b-a91aa43518b4" ContentHash="Nn5YyfFYekKGX6LkwmgmXg" CvElementArea="706, 395, 186, 34" CvType="InputBox" DesignTimeRectangle="708, 396, 182, 32" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='month' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='month' tag='SELECT' type='' class='input w28' aaname='' /&gt;" Guid="fadbdae2-8539-42e7-8c80-f130e6d96f60" InformativeScreenshot="dfc5abf1ecdf42bdc5f6a70fb9819442.png" Reference="ZocLrKLMuUSRIuVqfl2Eiw/AOt6OrCxy0-rvTkB94Lt3w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -171,8 +169,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NGetAttributeGeneric>
-            <ui:LogMessage DisplayName="Log Message : List of months " sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Join(&quot; &quot; , ListOfMonths )]" />
-            <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="Retrieve list of all years " Attribute="items" DisplayName="Get Attribute: Year" sap:VirtualizedContainerService.HintSize="353.6,271.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_8" Result="[ListOfYears]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <ui:LogMessage DisplayName="Log Message : List of months " sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Join(&quot; &quot; , ListOfMonths )]" />
+            <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" sap2010:Annotation.AnnotationText="Retrieve list of all years " Attribute="items" DisplayName="Get Attribute: Year" sap:VirtualizedContainerService.HintSize="354,270" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_8" Result="[ListOfYears]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="7c43b150-8675-4602-bb2b-a91aa43518b4" ContentHash="rdXoH8mrCUCxuTsY7paHBg" CvElementArea="892, 395, 185, 35" CvType="InputBox" DesignTimeRectangle="894, 396, 182, 32" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='year' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='year' tag='SELECT' type='' class='input w28' aaname='' /&gt;" Guid="10496abf-d836-4bff-a7f3-9c6dc124fe25" InformativeScreenshot="05f3391ec732f68981c9f03dc854c4bc.png" Reference="ZocLrKLMuUSRIuVqfl2Eiw/eZc8N8PkV0OnGpP4qfELbw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -188,8 +186,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NGetAttributeGeneric>
-            <ui:LogMessage DisplayName="Log Message : List of Year " sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[String.Join(&quot; &quot; , ListOfYears )]" />
-            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Ask user to enter birth date " DisplayName="Input Dialog : Date " sap:VirtualizedContainerService.HintSize="353.6,358.4" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select your birth date" OptionsString="[string.Join(&quot;;&quot;, ListOfDate).Substring(7)]" Title="Find your zodiac sign">
+            <ui:LogMessage DisplayName="Log Message : List of Year " sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[String.Join(&quot; &quot; , ListOfYears )]" />
+            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Ask user to enter birth date " DisplayName="Input Dialog : Date " sap:VirtualizedContainerService.HintSize="354,355" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select your birth date" OptionsString="[string.Join(&quot;;&quot;, ListOfDate).Substring(7)]" Title="Find your zodiac sign">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[UserBirthDate]</OutArgument>
               </ui:InputDialog.Result>
@@ -199,7 +197,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Ask user to input birth month" DisplayName="Input Dialog: Month" sap:VirtualizedContainerService.HintSize="353.6,358.4" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Select your birth month" OptionsString="[String.Join(&quot;;&quot;,  ListOfMonths).Substring(7)]" Title="Find your zodiac sign">
+            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Ask user to input birth month" DisplayName="Input Dialog: Month" sap:VirtualizedContainerService.HintSize="354,355" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Select your birth month" OptionsString="[String.Join(&quot;;&quot;,  ListOfMonths).Substring(7)]" Title="Find your zodiac sign">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[UserBirthMonth]</OutArgument>
               </ui:InputDialog.Result>
@@ -209,7 +207,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InputDialog>
-            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Ask user to enter birth year" DisplayName="Input Dialog: Year" sap:VirtualizedContainerService.HintSize="353.6,358.4" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Select your birth year" OptionsString="[String.Join(&quot;;&quot;, ListOfYears ).Substring(7)]" Title="Find your zodiac sign">
+            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="Ask user to enter birth year" DisplayName="Input Dialog: Year" sap:VirtualizedContainerService.HintSize="354,355" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Select your birth year" OptionsString="[String.Join(&quot;;&quot;, ListOfYears ).Substring(7)]" Title="Find your zodiac sign">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[UserBirthYear]</OutArgument>
               </ui:InputDialog.Result>
@@ -219,8 +217,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InputDialog>
-            <ui:LogMessage DisplayName="Log Message : User data " sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Users DOB is &quot; + UserBirthDate + &quot;-&quot; + UserBirthMonth + &quot;-&quot; + UserBirthYear]" />
-            <uix:NSelectItem sap2010:Annotation.AnnotationText="Input the date user choosed" DisplayName="Select Item: Input date " sap:VirtualizedContainerService.HintSize="353.6,220.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[UserBirthDate]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <ui:LogMessage DisplayName="Log Message : User data " sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Users DOB is &quot; + UserBirthDate + &quot;-&quot; + UserBirthMonth + &quot;-&quot; + UserBirthYear]" />
+            <uix:NSelectItem sap2010:Annotation.AnnotationText="Input the date user choosed" DisplayName="Select Item: Input date " sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[UserBirthDate]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="32">
                   <x:String>Select</x:String>
@@ -272,7 +270,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <uix:NSelectItem sap2010:Annotation.AnnotationText="Input the month user choosed" DisplayName="Select Item: Input month" sap:VirtualizedContainerService.HintSize="353.6,220.8" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[UserBirthMonth]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <uix:NSelectItem sap2010:Annotation.AnnotationText="Input the month user choosed" DisplayName="Select Item: Input month" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[UserBirthMonth]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="13">
                   <x:String>Select</x:String>
@@ -305,7 +303,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <uix:NSelectItem sap2010:Annotation.AnnotationText="Input the year user choosed" DisplayName="Select Item: Input year" sap:VirtualizedContainerService.HintSize="353.6,220.8" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[UserBirthYear]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <uix:NSelectItem sap2010:Annotation.AnnotationText="Input the year user choosed" DisplayName="Select Item: Input year" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[UserBirthYear]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="50">
                   <x:String>Select</x:String>
@@ -375,9 +373,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Submit button" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Submit button" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="d32d206f-a11c-4724-9338-c4136e1b4cc1" ContentHash="UhnP-LrUB06OCRPo5IGY3g" CvElementArea="698, 442, 202, 32" CvTextArea="774, 450, 50, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="699, 444, 200, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='sub' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sub' tag='INPUT' type='submit' class='button' aaname='Submit' check:text='Submit' /&gt;" Guid="2ec90a78-95e6-4bae-af57-0628694b2f66" InformativeScreenshot="247d1554d173c7a973c276455c773500.png" Reference="ZocLrKLMuUSRIuVqfl2Eiw/mve4fmHVNUSslDTX1dXCHg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="d32d206f-a11c-4724-9338-c4136e1b4cc1" ContentHash="YPLAkji2sE2wl6cYfhoBMA" CvElementArea="698, 442, 202, 32" CvTextArea="774, 450, 50, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="699, 444, 200, 29" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='sub' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sub' tag='INPUT' type='submit' class='button' aaname='Submit' check:text='Submit' /&gt;" Guid="2ec90a78-95e6-4bae-af57-0628694b2f66" InformativeScreenshot="247d1554d173c7a973c276455c773500.png" Reference="ZocLrKLMuUSRIuVqfl2Eiw/mve4fmHVNUSslDTX1dXCHg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="d32d206f-a11c-4724-9338-c4136e1b4cc1" CvTextArea="729, 316, 140, 16" CvTextArgument="Sun Sign Finder" CvType="Text" DesignTimeRectangle="474, 308, 650, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='sc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sc' tag='DIV' type='' class='form-h' aaname='Sun Sign Finder' check:innerText='Sun Sign Finder' /&gt;" Guid="a86e8f39-a4ef-42eb-8efc-e0766dcfd616" SearchSteps="Selector" />
@@ -396,7 +394,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NGetAttributeGeneric x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Retrieve the zodiac sign" Attribute="aaname" DelayBefore="3" DisplayName="Get Attribute : Zodiac sign" sap:VirtualizedContainerService.HintSize="353.6,271.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_9" Result="[Zodiacsign]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Retrieve the zodiac sign" Attribute="aaname" DelayBefore="3" DisplayName="Get Attribute : Zodiac sign" sap:VirtualizedContainerService.HintSize="354,270" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_9" Result="[Zodiacsign]" ScopeIdentifier="05e6a3fa-c1dc-45bf-b722-e45424564435" Version="V3">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/zodiac/aries-sign?sgn" CVScreenId="995b3b55-08f6-435d-a7b7-d475a5319774" ContentHash="f221cNK010KtAb2OEpNpgQ" CvTextArea="875, 524, 119, 13" CvType="AnyWordGroup" DesignTimeRectangle="780, 516, 309, 31" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="9c9a6bbc-cf57-4cc8-8576-812badb9dced" ImageBase64="" InformativeScreenshot="6ab88061414dccceea8cc9ed057bf992.png" Reference="ZocLrKLMuUSRIuVqfl2Eiw/VDJ0HZnSrUGgboUILtVPhA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Aries Horoscope Predictions | Strength &amp;amp; Weakness of Aries' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NGetAttributeGeneric.Target>
@@ -406,8 +404,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NGetAttributeGeneric>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box : Display sign " sap:VirtualizedContainerService.HintSize="353.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Your Zodiac sign is &quot; + Zodiacsign.Split(&quot;-&quot;)(1)]" />
-            <ui:LogMessage sap2010:Annotation.AnnotationText="log zodiac sign" DisplayName="Log Message : Zodiac sign" sap:VirtualizedContainerService.HintSize="353.6,200" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Your Zodiac sign is &quot; + Zodiacsign.Split(&quot;-&quot;)(1)]">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box : Display sign " sap:VirtualizedContainerService.HintSize="354,117" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Your Zodiac sign is &quot; + Zodiacsign.Split(&quot;-&quot;)(1)]" />
+            <ui:LogMessage sap2010:Annotation.AnnotationText="log zodiac sign" DisplayName="Log Message : Zodiac sign" sap:VirtualizedContainerService.HintSize="354,199" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Your Zodiac sign is &quot; + Zodiacsign.Split(&quot;-&quot;)(1)]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
